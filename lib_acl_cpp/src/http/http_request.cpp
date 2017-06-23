@@ -107,6 +107,7 @@ void http_request::reset(void)
 	conv_ = NULL;
 	need_retry_ = true;
 	RESET_RANGE();
+    header_.reset();
 }
 
 http_request& http_request::set_unzip(bool on)
